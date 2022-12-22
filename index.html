@@ -25,10 +25,23 @@
         background-attachment: fixed;
         background-blend-mode: darken;
       }
-      /* For mobile phones: */
-/*       [class*="col-"] {
-        width: 100%;
-      } */
+.container {
+  position: relative;
+  width: 45%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
     </style>
 
   </head>
@@ -45,8 +58,10 @@
             <h3 class="my-4"><b>Descubra Como Eu Diminui Meu Ldl de 210 para 104!</b></h3>
 
             <!-- VSL -->
-            <iframe class="responsive-iframe" width="727" height="460" src="https://www.youtube.com/embed/p1LRN86TYMM" title="Método Diminuindo Colesterol" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- Botão -->
+            <div class="container">
+              <iframe class="responsive-iframe" width="727" height="460" src="https://www.youtube.com/embed/p1LRN86TYMM" title="Método Diminuindo Colesterol" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <!-- Botão -->
             <div id="cta1" class="mt-4 d-none">
               <a href="https://pay.kiwify.com.br/oEYd4B9" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">COMPRAR AGORA!</span>
